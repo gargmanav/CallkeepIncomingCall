@@ -1,9 +1,10 @@
-/**
- * @format
- */
 
 import {AppRegistry} from 'react-native';
-import App from './App';
-import {name as appName} from './app.json';
 
+import {name as appName} from './app.json';
+import App from './src/App';
+import CustomIncomingCall from './src/CustomIncomingCall';
+
+
+AppRegistry.registerComponent('MyReactNativeApp', () => CustomIncomingCall);
 AppRegistry.registerComponent(appName, () => App);
